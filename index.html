@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Maicol R</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #444;
+        }
+        input {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 14px;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            cursor: pointer;
+            width: fit-content;
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Parcial Maicol R</h2>
+
+    <form action="almacenar.php" method="POST">
+        <div class="campo">
+            <label for="nombre">Nombre Producto</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre Producto" required>
+        </div>
+
+        <div class="campo">
+            <label for="categoria">Categoría</label>
+            <input type="text" id="categoria" name="categoria" placeholder="Categoria" required>
+        </div>
+
+        <div class="campo">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio" placeholder="Precio" required>
+        </div>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+</body>
+</html>
